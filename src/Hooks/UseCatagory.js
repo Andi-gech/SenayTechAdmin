@@ -13,7 +13,7 @@ export default function UseCatagory() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://crabby-frog-swimsuit.cyclic.app/catagory`,
+      `https://app.ethiopiantheaterassociation.com/catagory`,
       {
         headers: { _auth: authHeader },
       }

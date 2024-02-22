@@ -18,7 +18,7 @@ export default function LoginPage() {
     const mutation = useMutation({
         mutationKey,
         mutationFn: (newPost) => {
-            return axios.post('https://crabby-frog-swimsuit.cyclic.app/auth/signin', newPost)
+            return axios.post('https://app.ethiopiantheaterassociation.com/auth/signin', newPost)
         },
         onSuccess: (data) => {
          console.log(data.data.token)

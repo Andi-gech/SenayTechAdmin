@@ -13,7 +13,7 @@ export default function UseFetchBlog() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://crabby-frog-swimsuit.cyclic.app/blog/me`,
+      `https://app.ethiopiantheaterassociation.com/blog/me`,
       {
         headers: { _auth: authHeader },
       }
