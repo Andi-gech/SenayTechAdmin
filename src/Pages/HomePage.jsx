@@ -38,7 +38,7 @@ export default function HomePage() {
     const mutation = useMutation({
         mutationKey,
         mutationFn: (newPost) => {
-            return axios.put(`http://localhost:3000/admin/${auth?._id}`, newPost, {
+            return axios.put(`https://crabby-frog-swimsuit.cyclic.app//admin/${auth?._id}`, newPost, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 }

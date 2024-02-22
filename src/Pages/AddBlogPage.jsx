@@ -24,7 +24,7 @@ const authHeader = useAuthHeader();
     const mutation = useMutation({
         mutationKey,
         mutationFn: (newPost) => {
-            return axios.post(`http://localhost:3000/blog`, newPost, {
+            return axios.post(`https://crabby-frog-swimsuit.cyclic.app//blog`, newPost, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     '_auth': authHeader

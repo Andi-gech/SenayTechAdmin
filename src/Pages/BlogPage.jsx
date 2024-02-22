@@ -14,7 +14,7 @@ export default function BlogPage() {
 
     const handleDelete=(id)=>{
 
-      axios.delete(`http://localhost:3000/blog/${id}` ,{ headers: { _auth: authHeader} }).then((res)=>{
+      axios.delete(`https://crabby-frog-swimsuit.cyclic.app//blog/${id}` ,{ headers: { _auth: authHeader} }).then((res)=>{
         setSucess('Blog Deleted')
         refetch()
       }).catch((err)=>{

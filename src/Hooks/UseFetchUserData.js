@@ -13,7 +13,7 @@ export default function UseFetchUserData() {
   const fetchData = async (id) => {
     console.log( id);
     const res = await axios.get(
-      `http://localhost:3000/admin/${id}`,
+      `https://crabby-frog-swimsuit.cyclic.app//admin/${id}`,
       {
         headers: { _auth: authHeader },
       }
