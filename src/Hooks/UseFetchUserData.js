@@ -13,7 +13,7 @@ export default function UseFetchUserData() {
   const fetchData = async (id) => {
     console.log( id);
     const res = await axios.get(
-      `https://app.ethiopiantheaterassociation.com/admin/${id}`,
+      `https://api.senaycreatives.com/admin/${id}`,
       {
         headers: { _auth: authHeader },
       }

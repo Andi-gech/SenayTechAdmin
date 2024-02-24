@@ -14,7 +14,7 @@ export default function BlogPage() {
 
     const handleDelete=(id)=>{
 
-      axios.delete(`https://app.ethiopiantheaterassociation.com/blog/${id}` ,{ headers: { _auth: authHeader} }).then((res)=>{
+      axios.delete(`https://api.senaycreatives.com/blog/${id}` ,{ headers: { _auth: authHeader} }).then((res)=>{
         setSucess('Blog Deleted')
         refetch()
       }).catch((err)=>{

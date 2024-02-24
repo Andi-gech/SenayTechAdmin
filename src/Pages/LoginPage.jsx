@@ -18,7 +18,7 @@ export default function LoginPage() {
     const mutation = useMutation({
         mutationKey,
         mutationFn: (newPost) => {
-            return axios.post('https://app.ethiopiantheaterassociation.com/auth/signin', newPost)
+            return axios.post('https://api.senaycreatives.com/auth/signin', newPost)
         },
         onSuccess: (data) => {
          console.log(data.data.token)
@@ -39,7 +39,7 @@ export default function LoginPage() {
     
         },
         onError: (error) => {
-            console.error('Mutation failed:', error.response);
+            console.error('Mutation failed:', error);
             setError(error?.response?.data)
 
         }

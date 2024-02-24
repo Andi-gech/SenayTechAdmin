@@ -13,7 +13,7 @@ export default function UseCatagory() {
   const fetchData = async () => {
     
     const res = await axios.get(
-      `https://app.ethiopiantheaterassociation.com/catagory`,
+      `https://api.senaycreatives.com/catagory`,
       {
         headers: { _auth: authHeader },
       }

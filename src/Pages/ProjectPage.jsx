@@ -27,7 +27,7 @@ const authHeader = useAuthHeader();
     const mutation = useMutation({
         mutationKey,
         mutationFn: (newPost) => {
-            return axios.post(`https://app.ethiopiantheaterassociation.com/project`, newPost, {
+            return axios.post(`https://api.senaycreatives.com/project`, newPost, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     '_auth': authHeader

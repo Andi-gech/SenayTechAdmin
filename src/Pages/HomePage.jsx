@@ -38,7 +38,7 @@ export default function HomePage() {
     const mutation = useMutation({
         mutationKey,
         mutationFn: (newPost) => {
-            return axios.put(`https://app.ethiopiantheaterassociation.com/admin/${auth?._id}`, newPost, {
+            return axios.put(`https://api.senaycreatives.com/admin/${auth?._id}`, newPost, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 }
